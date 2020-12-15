@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Events</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            outline: 0;
+            border: 0;
+            color: #fff;
+            font-size: 1.6rem;
+            background: dodgerblue;
+            border-radius: 0.2em;
+            cursor: pointer;
+            padding: 0.3em;
+        }
+    </style>
+</head>
+<body>
+<a href="{{ url }}">
+    <button id="button">OAuth</button>
+</a>
+{% if error %}
+    <h3>Error: {{ error }}</h3>
+{% endif %}
+</body>
+</html>
